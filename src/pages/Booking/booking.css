@@ -1,0 +1,10 @@
+.booking-container{
+    align-items: center;
+}
+.booking-container form{
+    display: flex;
+    flex-direction: column;
+}
+.book-trip-title{
+    font-family: 'Dancing Script', cursive;
+}

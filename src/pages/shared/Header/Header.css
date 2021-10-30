@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+.brand-name{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+.brand-name:hover{
+    color: white
+}
+.links a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.links a:hover{
+    background-color: white;
+    color: black;
+}
+.links p{
+    color: rgb(10, 99, 233);
+    padding: 5px 10px;
+    margin-bottom: 0px;
+}

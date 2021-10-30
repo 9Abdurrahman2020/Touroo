@@ -1,0 +1,17 @@
+.trip-card{
+    background-color: rgba(158, 0, 40, 0.822);
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.img-card{
+    height: 250px;
+    transition: all .3s ease-in-out;
+}
+.trip-card:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.06);
+}
+.img-card:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.06);
+}

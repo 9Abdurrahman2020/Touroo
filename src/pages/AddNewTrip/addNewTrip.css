@@ -1,0 +1,7 @@
+.add-trip-container form{
+    display: flex;
+    flex-direction: column;
+}
+.add-trip-container h1{
+    font-family: 'Dancing Script', cursive;
+}
