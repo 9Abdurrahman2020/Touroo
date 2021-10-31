@@ -1,3 +1,6 @@
 .carousel-container img{
     height: 70vh;
 }
+.trip-title{
+    font-family: 'Dancing Script', cursive;
+}

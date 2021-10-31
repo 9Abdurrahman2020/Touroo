@@ -20,8 +20,8 @@ const Banner = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h3>{trip.title}</h3>
-                            <p>{trip.promo}</p>
+                            <h3 className="trip-title">{trip.title}</h3>
+                            <p className="trip-title">{trip.promo}</p>
                             <Link to={`/details/${trip._id}`}><button className="btn btn-danger">See Detail</button></Link>
                         </Carousel.Caption>
                     </Carousel.Item>)

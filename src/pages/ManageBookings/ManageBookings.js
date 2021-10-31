@@ -40,7 +40,6 @@ const ManageBookings = () => {
             .then(res => res.json())
             .then(result => {
                 if (result.acknowledged) {
-                    alert('Successfully Approved !')
                     setUpdate(update + 1)
                 }
             })
