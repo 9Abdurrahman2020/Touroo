@@ -6,10 +6,12 @@ import AddNewTrip from './pages/AddNewTrip/AddNewTrip';
 import AllTrip from './pages/AllTrip/AllTrip';
 import Booking from './pages/Booking/Booking';
 import Contact from './pages/Contact/Contact';
+import Dashboard from './pages/Dashboard/Dashboard';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import ManageBookings from './pages/ManageBookings/ManageBookings';
 import MyBookings from './pages/MyBookings/MyBookings';
+import NotFound from './pages/NotFound/NotFound';
 import Footer from './pages/shared/Footer/Footer';
 import Header from './pages/shared/Header/Header';
 import TripDetail from './pages/TripDetail/TripDetail';
@@ -42,6 +44,9 @@ function App() {
         <PrivateRoute path="/booking/:id">
           <Booking/>
         </PrivateRoute>
+        <PrivateRoute path="/dashboard">
+          <Dashboard/>
+        </PrivateRoute>
         <PrivateRoute path="/my-bookings">
           <MyBookings/>
         </PrivateRoute>
@@ -51,6 +56,9 @@ function App() {
         <PrivateRoute path="/manage">
           <ManageBookings/>
         </PrivateRoute>
+        <Route path="*">
+          <NotFound/>
+        </Route>
       </Switch>
         <Footer/>
     </BrowserRouter>

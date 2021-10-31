@@ -33,7 +33,7 @@ const MyBookings = () => {
         }
     }
     return (
-        <div>
+        <div className="my-booking-container">
             {
                 count < 1 ? <h3 className="text-center text-danger my-5 text-uppercase">You didn't book any trip yet !</h3> :
 

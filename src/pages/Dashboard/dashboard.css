@@ -1,0 +1,7 @@
+.dashboard-menu{
+    background-color:  rgb(34, 27, 27);
+    min-height: 100vh;
+}
+#selected{
+    background-color: rgb(199, 138, 5);
+}

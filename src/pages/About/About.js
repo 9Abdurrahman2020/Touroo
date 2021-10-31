@@ -1,17 +1,15 @@
 import React from 'react';
-
+import OurTeam from '../OurTeam/OurTeam';
 const About = () => {
     return (
         <div>
-            <div className="row">
-                <div className="col-md-6">
-                    <img className="img-fluid" src="https://i.ibb.co/LnDNN8P/10476.jpg" alt="" />
-                </div>
-                <div className="col-md-6 p-5">
+            <OurTeam/>
+                <div className="px-5 container">
                     <h2 className="text-center">About Us</h2>
-                    <p>We are a Tour organization company. We organization trip around the world. We have trip every month and whole year. Fell free to book your Trip.</p>
+                    <p className="text-center">We are a Tour organization company. We organization trip around the world. We have trip every month and whole year. Fell free to book your TuoRoo Trip. We are also planning to increase our tour route. stay connected with us for more exciting trip. <br />
+                    --Happy Tourism--
+                    </p>
                 </div>
-            </div>
         </div>
     );
 };

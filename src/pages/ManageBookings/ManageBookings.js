@@ -3,7 +3,7 @@ import { Table } from 'react-bootstrap';
 
 const ManageBookings = () => {
     const [bookings, setBookings] = useState([]);
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
     const [cancel, setCancel] = useState(1);
     const [update, setUpdate] = useState(1);
 
@@ -47,7 +47,7 @@ const ManageBookings = () => {
     }
 
     return (
-        <div>
+        <div className="my-booking-container">
             {
                 count < 1 ? <h3 className="text-center text-danger my-5 text-uppercase">No trip booked yet !</h3> :
                     <div className="table-responsive-md">

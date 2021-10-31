@@ -24,19 +24,19 @@ const AddNewTrip = () => {
             <h1 className="text-center mt-4 text-success">Add a <span className="text-warning">New Trip</span></h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <b>Title:</b>
-                <input {...register("title")} />
+                <input {...register("title")} required />
                 <b>Promo:</b>
-                <input {...register("promo")} />
+                <input {...register("promo")} required/>
                 <b>Description:</b>
-                <input {...register("des")} />
+                <input {...register("des")} required/>
                 <b>Trip Date:</b>
-                <input type="date" {...register("date")} />
+                <input type="date" {...register("date")} required/>
                 <b>Duration (day):</b>
-                <input type="number" {...register("duration")} />
+                <input type="number" {...register("duration")} required/>
                 <b>Expanse(Tk):</b>
-                <input type="number" {...register("expanse")} />
+                <input type="number" {...register("expanse")} required/>
                 <b>Image (url):</b>
-                <input {...register("img")} />
+                <input {...register("img")} required/>
                 <input className="btn btn-primary mt-3" type="submit" value="Add The Trip" />
             </form>
         </div>

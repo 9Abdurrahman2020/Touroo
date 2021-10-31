@@ -1,7 +1,4 @@
 .contact-container{
-    background-image: url('https://i.ibb.co/cyD01RJ/contactjpg.jpg');
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom right, #e04488, #94bbe9);
     background-size: cover;
-    background-color: tomato;
-    background-blend-mode: darken;
 }
