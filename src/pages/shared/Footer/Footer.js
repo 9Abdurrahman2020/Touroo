@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.css';
 const Footer = () => {
     return (
-        <div className="bg-black text-white py-5 mt-5">
+        <div className="bg-black text-white p-5 mt-5">
             <div className="row text-center">
                 <div className="col-md-6">
                     <div>
@@ -12,7 +12,7 @@ const Footer = () => {
                         <h4><i class="fas fa-phone-alt"></i>  +8801648308424</h4>
                     </div>
                     <div>
-                        <h4><i class="fas fa-envelope"></i>  Support@company.com</h4>
+                        <h4><i class="fas fa-envelope"></i>  9Abdurrahman2020@gmail.com</h4>
                     </div>
                 </div>
                 <div className="col-md-6">

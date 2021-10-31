@@ -16,7 +16,8 @@ import TripDetail from './pages/TripDetail/TripDetail';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 function App() {
   return (
-    <ContextProvider>
+    <div style={{overflow:'hidden'}}>
+          <ContextProvider>
       <BrowserRouter>
           <Header/>
       <Switch>
@@ -54,6 +55,7 @@ function App() {
         <Footer/>
     </BrowserRouter>
     </ContextProvider>
+    </div>
   );
 }
 

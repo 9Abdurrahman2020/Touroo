@@ -1,19 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Trip from '../Trip/Trip';
 
 const Trips = () => {
-    const [trips, setTrips] = useState([])
+    const [trips, setTrips] = useState([]);
+    const [loading, setLoading] = useState(true);
     useEffect(() => {
         fetch('https://rahmanassignment11.herokuapp.com/trips')
             .then(res => res.json())
-            .then(data => setTrips(data))
-    }, [])
+            .then(data => {
+                setTrips(data)
+                setLoading(false)
+            })
+    }, []);
     return (
         <div className="container my-5">
             <h1 className="text-center text-primary">Upcoming <span className="text-warning">Trip</span></h1>
             <hr className="mx-auto mt-0 text-success mb-4" style={{ width: '300px', height: '2px' }} />
+            {
+                loading && <div className="text-center">
+                <Spinner animation="border" variant="primary" />
+            </div>
+            }
             <Row xs={1} md={2} lg={4} className="g-4">
                 {
                     trips.slice(0, 8).map(trip => <Trip
